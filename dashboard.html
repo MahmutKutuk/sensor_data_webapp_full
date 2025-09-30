@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Dashboard</h2>
+<div class="dashboard-grid">
+  <div class="card">
+    <h4>Canlı Sıcaklık</h4>
+    <canvas id="chart-sicaklik"></canvas>
+  </div>
+  <div class="card">
+    <h4>Canlı Voltaj</h4>
+    <canvas id="chart-voltaj"></canvas>
+  </div>
+  <div class="card">
+    <h4>Son Sensör Değerleri</h4>
+    <table id="latest" class="table">
+      <thead><tr><th>Sensör</th><th>Değer</th><th>Tarih</th></tr></thead>
+      <tbody></tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}

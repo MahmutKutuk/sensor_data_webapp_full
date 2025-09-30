@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+<h1>Hoşgeldiniz</h1>
+<p>Bu uygulama, üretim hattından gelen sensör verilerini toplar, saklar ve web arayüzü üzerinden gösterir.</p>
+<div class="cards">
+  <div class="card">
+    <h3>Canlı Veri</h3>
+    <p>Dashboard üzerinden sıcaklık, voltaj ve akım değerlerini izleyebilirsiniz.</p>
+    <a class="btn" href="/dashboard">Dashboard</a>
+  </div>
+  <div class="card">
+    <h3>Hızlı Rapor</h3>
+    <p>CSV formatında tüm verileri indirebilirsiniz.</p>
+    <a class="btn" href="/download">Veri İndir</a>
+  </div>
+</div>
+{% endblock %}
